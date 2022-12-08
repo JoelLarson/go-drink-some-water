@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Fuck water. All my homies hate water.</title>
+    <style type="text/css">
+        html {
+            height: 100vh;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-image: url('/images/nos-bg.jpg');
+            background-repeat: no-repeat;
+            background-position: top top;
+            height: 100vh;
+        }
+
+        .container {
+            width: auto;
+            display: block;
+            position: absolute;
+            bottom: 0;
+            background-color: white;
+            height: 300px;
+            
+            padding: 15px;
+        }
+
+        .annoying {
+            display: block;
+            width: 100%;
+            height: 100%;
+            margin-top: 300px;
+            margin-left: -700px;
+        }
+
+        .annoying h1 {
+
+            font-weight: bold;
+            font-size: 4em;
+        }
+
+        .water-consumed {
+            width: 100%;
+            padding: 10px;
+            background-color: grey;
+        }
+
+        @font-face {
+            src: url("https://www.axis-praxis.org/fonts/webfonts/AvenirNext_Variable.woff2") format("woff2");
+            font-family: "Avenir";
+            font-style: normal;
+            font-weight: normal;
+        }
+
+        body {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+            font-family: "Avenir";
+        }
+
+        .text {
+            font-variation-settings: "wght" 400, "wdth" 100;
+            font-size: 12em;
+            text-align: center;
+            animation: text-flow 6s infinite;
+            background-color:white;
+            color: black;
+        }
+
+        .text:nth-child(1) {
+            animation-delay: 0.15s;
+            opacity: 0.9;
+            -webkit-text-stroke: 2px blue;
+            z-index: 0;
+        }
+
+        .text:nth-child(2) {
+            animation-delay: 0.5s;
+            opacity: 0.8;
+            -webkit-text-stroke: 3px blueviolet;
+            z-index: -1;
+        }
+
+        .text:nth-child(3) {
+            animation-delay: 0.75s;
+            opacity: 0.7;
+            -webkit-text-stroke: 3px blue;
+            z-index: -2;
+        }
+
+        .text:nth-child(4) {
+            animation-delay: 1s;
+            opacity: 0.9;
+            -webkit-text-stroke: 3px #1d9eda;
+            z-index: -3;
+        }
+
+        .text:nth-child(5) {
+            animation-delay: 1.25s;
+            opacity: 0.5;
+            -webkit-text-stroke: 3px #1072f3;
+            z-index: -4;
+        }
+
+        .text:nth-child(6) {
+            animation-delay: 1.5s;
+            opacity: 0.9;
+            -webkit-text-stroke: 3px #09008d;
+            z-index: -5;
+        }
+
+        .text:nth-child(7) {
+            animation-delay: 1.75s;
+            opacity: 0.3;
+            -webkit-text-stroke: 3px #084de2;
+            z-index: -6;
+        }
+
+        .text:nth-child(8) {
+            animation-delay: 2s;
+            opacity: 0.1;
+            -webkit-text-stroke: 3px #655aff;
+            z-index: -7;
+        }
+
+        .text:nth-child(9) {
+            animation-delay: 2.25s;
+            opacity: 1;
+            -webkit-text-stroke: 3px #0deec8;
+            z-index: -8;
+        }
+
+        @keyframes text-flow {
+            25% {
+                font-variation-settings: "wght" 1000, "wdth" 300;
+                filter: hue-rotate(0deg);
+            }
+
+            35% {
+                transform: translateY(160px);
+                font-variation-settings: "wght" 431, "wdth" 100;
+            }
+
+            50% {
+                transform: translateY(-100px);
+                font-variation-settings: "wght" 200, "wdth" 100;
+            }
+
+            75% {
+                transform: translateY(0%);
+                font-variation-settings: "wght" 30, "wdth" 10;
+                filter: hue-rotate(10deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="container">
+        <h1>Total Water Consumed:</h1>
+        <progress value="10" max="100" class="water-consumed"></progress>
+        <p>0 / 100</p>
+    </section>
+
+    <section class="annoying">
+        <h1 class="text">0% WATER</h1>
+
+        <h1 class="text" style="margin-left: -300px;">200% NOT WATER</h1>
+
+        <h1 class="text" style="margin-right: 300px;">100% NOS</h1>
+
+        <h1 class="text">HYDROPHOBIC</h1>
+    </section>
+</body>
+
+</html>
